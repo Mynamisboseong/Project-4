@@ -19,7 +19,7 @@ body {
 
 /* 로고 스타일 */
 .navbar .logo {
-  font-size: 40px;
+  font-size: 60px;
   font-weight: bold;
   color: white;
   text-decoration: none;
@@ -76,8 +76,72 @@ body {
 }
 
 /*----------------메인 콘텐츠---------------*/
-.main-content {
+.main-content-01 {
+  background-color: #05472b;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 200px;
+}
+
+.main-content-01 {
+  display: flex; /* 플렉스를 사용해 자식 요소들을 가로로 배치 */
+  align-items: center; /* 세로 중앙 정렬 */
+  justify-content: space-between; /* 왼쪽과 오른쪽에 배치 */
+  gap: 70px;
+}
+
+.main-img {
+  flex: 0.8; /* 이미지 영역을 1 비율로 설정 */
+}
+
+.main-img img {
+  max-width: 100%; /* 이미지가 부모 요소의 크기를 넘지 않도록 설정 */
+  height: auto; /* 높이는 자동으로 비율에 맞게 조정 */
+}
+
+.main-content-01-text {
+  flex: 1; /* 텍스트 영역을 1 비율로 설정 */
+  text-align: left; /* 텍스트를 왼쪽 정렬 */
+  color: white;
+}
+
+.main-content-01-title {
+  font-size: 80px; /* 제목 크기 설정 */
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+
+.main-content-01-subtitle {
+  font-size: 30px;
+  font-weight: 400;
+  padding-bottom: 100px;
+}
+
+.main-content-01-subtitle-highlight {
+  background-color: #ff9700;
+  color: black;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.main-content-01-highlight {
+  font-size: 100px; /* 강조된 부분의 크기 설정 */
+  font-weight: bold; /* 강조된 부분을 굵게 */
+}
+
+.main-content-01-button {
   padding: 20px;
+  font-size: 40px;
+  font-family: Noto Sans;
+  font-weight: 700;
+  color: #05472b;
+  border-radius: 40px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.main-content-01-button:hover {
+  transform: scale(1.1); /* 버튼 크기를 10% 증가 */
 }
 
 /*----------------하단 바---------------*/
@@ -86,6 +150,7 @@ body {
   font-weight: 300;
   font-size: 13px;
   padding-bottom: 10px;
+  padding-top: 300px;
 }
 
 /*하단 네비게이션 바*/
