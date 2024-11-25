@@ -1,0 +1,122 @@
+/* 기본 스타일 */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/*---------------네비게이션 바 스타일---------------*/
+.navbar {
+  background-color: #05472b;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  padding: 40px 100px; /* 좌우 여백 조정 */
+  display: flex;
+  justify-content: space-between; /* 로고와 링크들 좌우로 분리 */
+  align-items: center; /* 수직 정렬 */
+  box-sizing: border-box;
+}
+
+/* 로고 스타일 */
+.navbar .logo {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+/* 네비게이션 링크 스타일 */
+.navbar .nav-links {
+  display: flex; /* 링크 그룹들을 가로로 배치 */
+  align-items: center; /* 수직 정렬 */
+}
+
+/* 그룹 별 링크 컨테이너 */
+.navbar .nav-links .group-left,
+.navbar .nav-links .group-right {
+  display: flex; /* 각 그룹의 링크를 가로로 배치 */
+  align-items: center;
+}
+
+/* 그룹 사이의 간격 */
+.navbar .nav-links .group-right {
+  margin-left: 50px; /* 두 그룹 사이의 간격 조정 */
+}
+
+/* 링크 스타일 */
+.navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px; /* 링크 간 간격 */
+  font-size: 23px;
+  font-weight: 600;
+}
+
+/* 링크 호버 효과 */
+.navbar .nav-links a:hover {
+  color: #e5c200; /* 강조된 색상 */
+}
+
+/* "Login" 버튼 스타일 */
+.navbar .login-btn {
+  background-color: white;
+  color: black !important;
+  padding: 8px 40px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.navbar .login-btn:hover {
+  background-color: #e5c200;
+  color: black;
+}
+
+/*----------------메인 콘텐츠---------------*/
+.main-content {
+  padding: 20px;
+}
+
+/*----------------하단 바---------------*/
+.bottom-introduce {
+  text-align: center;
+  font-weight: 300;
+  font-size: 13px;
+  padding-bottom: 10px;
+}
+
+/*하단 네비게이션 바*/
+.bottom-navbar {
+  background-color: #282c31; /* 네비게이션 바 배경색 */
+  color: rgb(216, 216, 216);
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.bottom-nav-links {
+  display: flex; /* 가로로 배치 */
+  align-items: center; /* 세로 중앙 정렬 */
+  justify-content: center;
+  gap: 30px;
+}
+
+.bottom-nav-links a {
+  color: rgb(216, 216, 216);
+  text-decoration: none; /* 링크 기본 밑줄 제거 */
+  font-size: 13px; /* 링크 폰트 크기 */
+  font-weight: 400; /* 링크 폰트 두께 */
+}
+
+.bottom-nav-links a:hover {
+  color: black; /* 링크 호버 시 강조 색상 */
+}
+
+.bottom-navbar-text {
+  padding-top: 20px;
+  text-align: center;
+  font-family: 400;
+  font-size: 10px;
+}
