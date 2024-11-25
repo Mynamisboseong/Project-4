@@ -91,12 +91,35 @@ body {
 }
 
 .main-img {
-  flex: 0.8; /* 이미지 영역을 1 비율로 설정 */
+  position: relative; /* 자식 요소의 absolute 위치를 기준으로 설정 */
+  flex: 0.8;
+  overflow: hidden; /* 텍스트가 이미지 밖으로 나가지 않도록 설정 */
 }
 
 .main-img img {
-  max-width: 100%; /* 이미지가 부모 요소의 크기를 넘지 않도록 설정 */
-  height: auto; /* 높이는 자동으로 비율에 맞게 조정 */
+  max-width: 100%; /* 이미지 크기를 부모에 맞게 제한 */
+  height: auto;
+  display: block;
+}
+
+.overlay-text {
+  position: absolute; /* 부모(.main-img)를 기준으로 위치 설정 */
+  bottom: 10%; /* 하단에서 10% 위치 */
+  left: 7%; /* 좌측에서 10% 위치 */
+  color: white;
+  text-align: left;
+  z-index: 10;
+  transform: none; /* 중앙 정렬 보정을 제거 */
+}
+
+.overlay-title-text {
+  font-size: 70px; /* 제목 텍스트 크기 */
+  font-weight: bold; /* 굵게 */
+}
+
+.overlay-subtext {
+  font-size: 30px; /* 서브텍스트 크기 */
+  margin-top: 10px; /* 간격 */
 }
 
 .main-content-01-text {
