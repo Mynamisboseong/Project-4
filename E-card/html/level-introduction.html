@@ -35,11 +35,15 @@
     <!-- 메인 콘텐츠 -->
     <div class="main-content-01">
       <div class="main-img">
-        <img src="../public/img/main_img_01.png" alt="mainimg" class="filtered-image" />
+        <!-- 이미지 슬라이더 -->
+        <img
+          id="main-image"
+          src="../public/img/main_img_01.png"
+          alt="일상 회화 관련 이미지"
+          class="filtered-image"
+        />
         <div class="overlay-text">
-          <div class="overlay-title-text">
-            일상 회화
-          </div>
+          <div class="overlay-title-text">일상 회화</div>
           <div class="overlay-subtext">
             일상에서 자주 사용하는 짧은 표현과 문장들
           </div>
@@ -80,5 +84,8 @@
         E-Card Korea, ECARD. All Rights Reserved
       </div>
     </div>
+
+    <!-- JS연동 -->
+    <script src="../script/level-introduce.js"></script>
   </body>
 </html>

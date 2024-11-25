@@ -75,15 +75,12 @@ body {
   color: black;
 }
 
-/*----------------메인 콘텐츠---------------*/
+/*----------------메인 페이지 01---------------*/
 .main-content-01 {
   background-color: #05472b;
   padding-top: 100px;
   padding-bottom: 100px;
   padding-left: 200px;
-}
-
-.main-content-01 {
   display: flex; /* 플렉스를 사용해 자식 요소들을 가로로 배치 */
   align-items: center; /* 세로 중앙 정렬 */
   justify-content: space-between; /* 왼쪽과 오른쪽에 배치 */
@@ -110,28 +107,27 @@ body {
 }
 
 .overlay-text {
-  position: absolute; /* 부모(.main-img)를 기준으로 위치 설정 */
-  bottom: 10%; /* 하단에서 10% 위치 */
-  left: 7%; /* 좌측에서 10% 위치 */
+  position: absolute;
+  bottom: 10%;
+  left: 7%;
   color: white;
   text-align: left;
   z-index: 10;
-  transform: none; /* 중앙 정렬 보정을 제거 */
 }
 
 .overlay-title-text {
-  font-size: 70px; /* 제목 텍스트 크기 */
-  font-weight: bold; /* 굵게 */
+  font-size: 70px;
+  font-weight: bold;
 }
 
 .overlay-subtext {
-  font-size: 30px; /* 서브텍스트 크기 */
-  margin-top: 10px; /* 간격 */
+  font-size: 30px;
+  margin-top: 10px;
 }
 
 .main-content-01-text {
-  flex: 1; /* 텍스트 영역을 1 비율로 설정 */
-  text-align: left; /* 텍스트를 왼쪽 정렬 */
+  flex: 1; 
+  text-align: left;
   color: white;
 }
 
@@ -167,7 +163,6 @@ body {
   font-weight: 700;
   color: #05472b;
   border-radius: 40px;
-  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .main-content-01-button:hover {
