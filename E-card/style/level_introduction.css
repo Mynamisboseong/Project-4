@@ -102,6 +102,13 @@ body {
   display: block;
 }
 
+.filtered-image {
+  width: 100%;
+  height: auto;
+  filter: brightness(0.6) contrast(1.2);
+  display: block;
+}
+
 .overlay-text {
   position: absolute; /* 부모(.main-img)를 기준으로 위치 설정 */
   bottom: 10%; /* 하단에서 10% 위치 */
