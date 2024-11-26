@@ -192,57 +192,72 @@ body {
 }
 
 /*----------------메인 페이지 03---------------*/
-.main-content-03 {
+.container {
   background-color: #05472b;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-
-.content03-img {
-  flex: 1;
-  padding-left: 50px; /* 필요에 따라 조정 */
-}
-
-.content03-img img {
-  width: 80%; /* 이미지 크기 조정 */
-  height: auto;
-  display: block;
-}
-
-.content03-right {
-  flex: 1;
-  position: relative; /* 배경과 텍스트를 겹치도록 설정 */
-  width: 100%; /* 부모 요소 크기 */
-  height: 100%; /* 부모 요소 높이 */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.content03-right::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+  justify-content: space-between; /* 이미지 오른쪽, 텍스트 왼쪽 배치 */
   width: 100%;
-  height: 100%;
-  background-image: url(../assets/img/Vector.png);
-  background-size: contain; /* 이미지 크기를 비율에 맞게 조정 */
-  background-position: center;
-  background-repeat: no-repeat; /* 반복 방지 */
-  opacity: 0.5;
-  z-index: 0;
+  min-height: 100vh;
+  padding: 20px;
+  position: relative; /* 절대 위치 기준 */
+  overflow: hidden;
+}
+
+.image-section {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end; /* 이미지를 오른쪽으로 이동 */
+  position: relative;
+  margin-right: 200px;
+  z-index: 1; /* 이미지 아래 레이어 */
+}
+
+.image-wrapper {
+  position: relative;
+  width: 700px;
+}
+
+.image-wrapper img {
+  width: 100%;
+}
+
+.text-section {
+  flex: 1;
+  padding-left: 20px; /* 텍스트를 왼쪽으로 조금 이동 */
+  position: relative; /* 이 위치는 이제 필요 없음 */
+  z-index: 2;
+  margin-left: -50px; /* 텍스트를 더 왼쪽으로 이동 */
 }
 
 .content03-text {
-  position: relative; /* 텍스트를 배경 위에 표시 */
-  z-index: 1; /* 텍스트가 배경보다 위에 오도록 설정 */
-  color: white;
-  text-align: left;
   font-size: 30px;
   font-weight: 600;
+  position: absolute;
+  top: 50%; /* 텍스트를 세로 방향 중앙에 배치 */
+  left: 30%; /* 텍스트를 가로 방향 중앙에 배치 */
+  transform: translate(-50%, -50%); /* 중앙 정렬 보정 */
+  z-index: 3;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 100%; /* 텍스트가 너무 넓어지지 않도록 제한 */
+  text-align: left;
+  word-break: break-word; /* 단어가 길어지면 줄 바꿈 */
 }
+
+.background-image {
+  position: absolute; /* .container를 기준으로 절대 위치 */
+  top: 50%; /* .container 중앙에 위치 */
+  right: -30px; /* 텍스트 섹션의 오른쪽 끝에 가까운 위치 */
+  transform: translateY(-50%); /* 이미지 세로 중앙 정렬 */
+  width: 20px; /* 이미지 크기 조정 */
+  height: auto;
+  z-index: 0; /* 모든 텍스트와 이미지 뒤로 */
+  pointer-events: none; /* 이미지가 클릭되지 않도록 설정 */
+}
+
+
 
 /*----------------하단 바---------------*/
 .bottom-introduce {
