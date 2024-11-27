@@ -180,7 +180,7 @@ body {
 
 .main-content-02-left {
   text-align: left;
-  padding-left: 10%;
+  padding-left: 12%;
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -333,7 +333,51 @@ body {
   width: 100%;
 }
 
+/*----------------메인 컴포넌트 05---------------*/
+.study-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 75%;
+  margin: 0 auto;
+}
 
+.study-box {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  position: relative;
+  width: 600px;
+}
+
+.study-title {
+  background-color: #005632;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  border-radius: 150px;
+  padding: 30px 20px;
+  text-align: center;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  width: 50%;
+}
+
+.study-textbox {
+  background-color: white;
+  border-radius: 40px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: black;
+  padding: 65px 40px;
+  margin-top: 80px;
+  border: solid;
+}
+
+.study-textbox-highlight {
+  color: #FF9700;
+}
 
 /*----------------하단 바---------------*/
 .bottom-introduce {
@@ -342,6 +386,7 @@ body {
   font-size: 13px;
   padding-bottom: 10px;
   padding-top: 300px;
+  width: 100%;
 }
 
 /*하단 네비게이션 바*/
