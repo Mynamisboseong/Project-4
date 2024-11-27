@@ -80,11 +80,11 @@ body {
   background-color: #05472b;
   padding-top: 100px;
   padding-bottom: 100px;
-  padding-left: 200px;
+  padding-left: 360px;
   display: flex; /* 플렉스를 사용해 자식 요소들을 가로로 배치 */
   align-items: center; /* 세로 중앙 정렬 */
   justify-content: space-between; /* 왼쪽과 오른쪽에 배치 */
-  gap: 70px;
+  gap: 200px;
 }
 
 .main-img {
@@ -174,8 +174,15 @@ body {
   background-color: white;
   text-align: right;
   padding-right: 10%;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.main-content-02-left {
+  text-align: left;
+  padding-left: 10%;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .main-content-02-title {
@@ -191,17 +198,19 @@ body {
   color: #c7c7c7;
 }
 
-/*----------------메인 페이지 03---------------*/
+/*----------------메인 페이지 03---------------311*/
 .container {
+  position: relative; /* 모든 자식 요소의 절대 위치 기준 */
   background-color: #05472b;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* 이미지 오른쪽, 텍스트 왼쪽 배치 */
+  justify-content: space-between; /* 텍스트와 이미지 배치 */
   width: 100%;
   min-height: 100vh;
   padding: 20px;
-  position: relative; /* 절대 위치 기준 */
   overflow: hidden;
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 
 .image-section {
@@ -209,13 +218,13 @@ body {
   display: flex;
   justify-content: flex-end; /* 이미지를 오른쪽으로 이동 */
   position: relative;
-  margin-right: 200px;
+  margin-right: 300px;
   z-index: 1; /* 이미지 아래 레이어 */
 }
 
 .image-wrapper {
   position: relative;
-  width: 700px;
+  width: 850px;
 }
 
 .image-wrapper img {
@@ -231,7 +240,7 @@ body {
 }
 
 .content03-text {
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 600;
   position: absolute;
   top: 50%; /* 텍스트를 세로 방향 중앙에 배치 */
@@ -247,14 +256,81 @@ body {
 }
 
 .background-image {
-  position: absolute; /* .container를 기준으로 절대 위치 */
-  top: 50%; /* .container 중앙에 위치 */
-  right: -30px; /* 텍스트 섹션의 오른쪽 끝에 가까운 위치 */
-  transform: translateY(-50%); /* 이미지 세로 중앙 정렬 */
-  width: 20px; /* 이미지 크기 조정 */
+  position: absolute;
+  top: 50%;
+  right: 0; /* 오른쪽 끝으로 이동 */
+  transform: translateY(-50%); /* 세로 중앙 정렬 */
+  width: 600px; /* 이미지 크기 */
   height: auto;
-  z-index: 0; /* 모든 텍스트와 이미지 뒤로 */
-  pointer-events: none; /* 이미지가 클릭되지 않도록 설정 */
+  z-index: 1; /* 텍스트보다 아래에 배치 */
+  pointer-events: none; /* 이미지 클릭 방지 */
+  padding-top: 200px;
+  padding-bottom: 50px;
+}
+
+/*----------------메인 컴포넌트 04---------------*/
+.levels-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+
+.level-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 400px;
+}
+
+.level-box.level-box-1 {
+  padding-top: 300px;
+}
+
+.level-box.level-box-2 {
+  padding-top: 150px;
+}
+
+.level-box.level-box-3 {
+  padding-top: 10px;
+}
+
+
+.level-icon {
+  background-color: #00693e;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px 30px;
+  text-align: center;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.level-line {
+  width: 7px;
+  height: 70px;
+  background: linear-gradient(to bottom, #d4f0dd 50%, transparent 50%);
+  background-size: 12px 10px;
+  border-radius: 10;
+  margin: 10px 0;
+}
+
+.level-text {
+  background: linear-gradient(to bottom, #3cc68d, #cdffdf);
+  border-radius: 20px;
+  padding: 65px 40px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: black;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
 }
 
 
