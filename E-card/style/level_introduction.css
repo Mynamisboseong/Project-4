@@ -85,6 +85,7 @@ body {
   align-items: center; /* 세로 중앙 정렬 */
   justify-content: space-between; /* 왼쪽과 오른쪽에 배치 */
   gap: 200px;
+  margin-right: 0;
 }
 
 .main-img {
