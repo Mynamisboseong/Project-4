@@ -224,7 +224,7 @@ body {
 
 .image-wrapper {
   position: relative;
-  width: 700px;
+  width: 800px;
 }
 
 .image-wrapper img {
@@ -260,7 +260,7 @@ body {
   top: 50%;
   right: 0; /* 오른쪽 끝으로 이동 */
   transform: translateY(-50%); /* 세로 중앙 정렬 */
-  width: 600px; /* 이미지 크기 */
+  width: 450px; /* 이미지 크기 */
   height: auto;
   z-index: 1; /* 텍스트보다 아래에 배치 */
   pointer-events: none; /* 이미지 클릭 방지 */
