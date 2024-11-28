@@ -510,6 +510,54 @@ body {
   padding-top: 30px;
 }
 
+/*----------------메인 컴포넌트 07---------------*/
+/* 부모 컨테이너 스타일 */
+.studylanguage-container {
+  display: flex; /* Flexbox를 사용하여 자식 요소들을 가로로 배치 */
+  justify-content: space-between; /* 좌우 간격을 균등하게 배치 */
+  gap: 50px; /* 자식 요소들 간의 간격 설정 */
+  padding-left: 400px;
+  padding-right: 400px;
+}
+
+/* 개별 콘텐츠 박스 */
+.studylanguage-box {
+  width: 40%; /* 두 개의 박스가 화면에 잘 배치되도록 너비 설정 */
+  padding: 10px;
+  background-color: #1EBE7A; /* 배경색 설정 (선택 사항) */
+  border-radius: 40px; /* 둥근 모서리 설정 (선택 사항) */
+}
+
+/* 제목 스타일 */
+.studylanguage-title {
+  font-size: 3rem;
+  color: #FF9700;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 70px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+
+  width: 50%; /* 배경의 넓이를 줄이기 */
+  text-align: center; /* 텍스트를 중앙 정렬 */
+  margin-left: auto; /* 수평 중앙 정렬 */
+  margin-right: auto; /* 수평 중앙 정렬 */
+}
+
+/* 본문 텍스트 스타일 */
+.studylanguage-text {
+  font-weight: 600;
+  font-size: 2rem;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center; /* 텍스트를 중앙 정렬 */
+  margin-left: auto; /* 수평 중앙 정렬 */
+  margin-right: auto; /* 수평 중앙 정렬 */
+}
+
+
 
 
 /*----------------하단 바---------------*/
