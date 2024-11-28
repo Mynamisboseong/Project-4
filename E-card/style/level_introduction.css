@@ -515,14 +515,15 @@ body {
 .studylanguage-container {
   display: flex; /* Flexbox를 사용하여 자식 요소들을 가로로 배치 */
   justify-content: space-between; /* 좌우 간격을 균등하게 배치 */
-  gap: 50px; /* 자식 요소들 간의 간격 설정 */
-  padding-left: 400px;
-  padding-right: 400px;
+  gap: 10px; /* 자식 요소들 간의 간격 설정 */
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-bottom: 100px;
 }
 
 /* 개별 콘텐츠 박스 */
 .studylanguage-box {
-  width: 40%; /* 두 개의 박스가 화면에 잘 배치되도록 너비 설정 */
+  width: 36%; /* 두 개의 박스가 화면에 잘 배치되도록 너비 설정 */
   padding: 10px;
   background-color: #1EBE7A; /* 배경색 설정 (선택 사항) */
   border-radius: 40px; /* 둥근 모서리 설정 (선택 사항) */
