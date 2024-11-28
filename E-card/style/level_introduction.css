@@ -459,9 +459,7 @@ body {
 .contentsbox-01 {
   width: 30%;
   position: relative;
-  overflow: hidden; /* 둥근 모서리에 이미지 및 오버레이 제한 */
-  background: none; /* 불필요한 배경 제거 */
-  box-shadow: none; /* 그림자 제거 */
+  overflow: hidden;
 }
 
 /* 이미지 컨테이너 */
@@ -469,8 +467,7 @@ body {
   position: relative;
   width: 100%;
   height: auto;
-  padding-top: 100%; /* 4:3 비율을 유지 */
-  border-radius: 30px; /* 이미지에 둥글게 효과 적용 */
+  padding-top: 100%;
   overflow: hidden;
 }
 
@@ -482,8 +479,6 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover; /* 이미지 비율 유지 */
-  border-radius: 30px; /* 이미지에 둥글게 효과 적용 */
-  box-shadow: none; /* 그림자 제거 */
 }
 
 /* 텍스트 오버레이 */
@@ -496,10 +491,9 @@ body {
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* 텍스트 수직 중앙 정렬 */
-  align-items: center; /* 텍스트 수평 중앙 정렬 */
+  justify-content: center;
+  align-items: center; 
   text-align: center;
-  background: none; /* 배경색 제거 */
 }
 
 /* 제목 스타일 */
